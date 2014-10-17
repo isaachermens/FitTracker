@@ -1,0 +1,1 @@
+An activity and fitness assessment tracker written in Ruby on Rails.
