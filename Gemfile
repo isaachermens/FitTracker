@@ -54,6 +54,7 @@ group :development do
 end
 
 group :test, :development do
+  gem 'dotenv-rails'
   gem 'pry'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
