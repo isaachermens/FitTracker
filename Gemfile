@@ -24,7 +24,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'slim-rails'
-gem 'rails_12factor'
+gem 'foreigner'
+
+gem 'validates_timeliness'
 
 
 # Use ActiveModel has_secure_password
@@ -44,4 +46,19 @@ group :development do
   gem "better_errors"
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+end
+
+group :test, :development do
+  gem 'pry'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'guard-rspec'
+end
+
+group :test do
+  gem 'shoulda-matchers'
+end
+
+group :production do
+  gem 'rails_12factor'
 end
